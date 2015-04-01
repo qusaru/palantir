@@ -1,0 +1,57 @@
+{
+	"background":
+	{
+		"scripts":
+		[
+			"background.js"
+		]
+	},
+	"browser_action":
+	{
+		"default_icon":
+		{
+			"19": "19.png",
+			"38": "38.png"
+		},
+		"default_popup": "popup.html",
+		"default_title": "Palantir"
+	},
+	"content_scripts":
+	[
+		{
+			"css":
+			[
+				"content.css"
+			],
+			"js":
+			[
+				"content.js"
+			],
+			"matches":
+			[
+				"*://*/*"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"description": "I see you",
+	"icons":
+	{
+		"16": "16.png",
+		"48": "48.png",
+		"128": "128.png"
+	},
+	"manifest_version": 2,
+	"name": "Palantir",
+	"options_page": "options.html",
+	"permissions":
+	[
+		"*://*/*",
+		"contextMenus",
+		"notifications",
+		"tabs",
+		"unlimitedStorage"
+	],
+	"version": "1",
+	"version_name": "Amon Sul"
+}
