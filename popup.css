@@ -1,0 +1,12 @@
+textarea.input
+{
+	border: none;
+	height: 100%;
+	left: 0;
+	min-height: 9em;
+	min-width: 21em;
+	outline: none;
+	resize: none;
+	top: 0;
+	width: 100%;
+}
